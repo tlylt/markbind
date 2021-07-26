@@ -44,5 +44,12 @@ We recommend the **WebStorm IDE** for working with MarkBind code.
   <box type="info" seamless>
   MarkBind uses <md>[lerna](https://github.com/lerna/lerna)</md>, a popular multi-package development tool, to manage it's dependencies. It is essentially a high level wrapper over node and npm's functionalities
   </box>
+1. **Congratulations!** Now you are ready to start modifying MarkBind code.
 
-1. **Congratulations!** Now you ready to start modifying MarkBind code.
+## Common setup issues
+
+Having issues with setting up the project properly? Check if you have:
+- Installed all required dependencies listed in the above [Prerequsisites section](#prerequisites). Notably, check that the versions of the required dependencies are at least or greater than the required versions.
+- Followed the steps in the above[Setting up section](#setting-up-the-dev-environment) in the same order.
+
+Lastly, check if there are any errors logged out in the console and search online for common fixes. If the issues persist, please reach out to us by posting in [our issue tracker](https://github.com/markbind/markbind/issues).
