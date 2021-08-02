@@ -62,6 +62,7 @@ program
   .name('markbind')
   .version(CLI_VERSION);
 
+
 program
   .command('init [root]')
   .option('-c, --convert', 'convert a GitHub wiki or docs folder to a MarkBind website')
@@ -143,8 +144,8 @@ program
     };
 
     const site = new Site(rootFolder, outputFolder, onePagePath,
-                          options.forceReload, options.siteConfig, options.dev,
-                          options.backgroundBuild, reloadAfterBackgroundBuild);
+      options.forceReload, options.siteConfig, options.dev,
+      options.backgroundBuild, reloadAfterBackgroundBuild);
 
     const syncOpenedPages = () => {
       logger.info('Synchronizing opened pages list before reload');
@@ -310,7 +311,7 @@ program
   .command('build [root] [output]')
   .alias('b')
   .option('--baseUrl [baseUrl]',
-          'optional flag which overrides baseUrl in site.json, leave argument empty for empty baseUrl')
+    'optional flag which overrides baseUrl in site.json, leave argument empty for empty baseUrl')
   .option('-s, --site-config <file>', 'specify the site config file (default: site.json)')
   .description('build a website')
   .action((userSpecifiedRoot, output, options) => {
