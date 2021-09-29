@@ -13,12 +13,13 @@ Apply classes, attributes, identifiers to block level markdown (eg. paragraphs, 
 by leaving a space before '{' {.text-success #attribute-example}
 
 #### heading {.text-info}
-
+omitting the **space**{.text-primary .bg-light}
 --- {.border-danger}
 
 Apply the same to inline markdown (eg. bold text) by
-omitting the **space**{.text-primary .bg-light header="attributes example"}
-<!-- Use inspect element on the **space** word below to see the "header" attribute! -->
+
+--- {.text-primary .bg-light header="attributes example"}
+
 </variable>
 </include>
 

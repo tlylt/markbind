@@ -12,6 +12,8 @@ tags: ["tag-frontmatter-shown", "tag-included-file", "+tag-exp*", "-tag-exp-hidd
 
 **Test `<markdown>` and `<md>` elements**
 
+--- {.dotted}
+
 <markdown>This should be wrapped in a `<p>` tag as it uses the block-level markdown renderer</markdown>
 
 <md>

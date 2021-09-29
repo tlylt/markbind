@@ -2,12 +2,45 @@
 
 Use three or more asterisks (`***`), dashes (`---`), or underscores (`___`) to indicate a horizontal line.
 
+Add additional classes to customize the style of the horizontal line further. 
+
 <include src="codeAndOutput.md" boilerplate >
 <variable name="highlightStyle">markdown</variable>
 <variable name="code">
 *****
 -----
 ______________
+
+</variable>
+</include>
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="highlightStyle">markdown</variable>
+<variable name="code">
+
+--- {.dotted}
+
+--- {.dashed}
+
+--- {.double}
+
+--- {.thick}
+
+--- {.border-primary}
+
+--- {.border-info}
+
+--- {.thick-1}
+
+--- {.thick-2}
+
+--- {.dotted .border-primary }
+
+--- {.thick-3}
+
+--- {.dotted}
+
+
 </variable>
 </include>
 
