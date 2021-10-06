@@ -94,6 +94,10 @@
     {
       "src": "testCenterText.md",
       "title": "Center-aligned text test"
+    },
+    {
+      "src": "testHr.md",
+      "title": "create different types of horizontal rules"
     }
   ],
   "ignore": [
