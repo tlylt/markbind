@@ -333,3 +333,8 @@ h5,
 h6 {
     margin-bottom: 1rem;
 }
+
+/* horizontal scroll for large embeds on mobile */
+.block-embed {
+    overflow-x: auto;
+}
