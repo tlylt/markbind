@@ -1190,6 +1190,7 @@ class Site {
           }
           this.generateProgressBarStatus(progressBar, context, pageGenerationQueue, resolve);
         } catch (err) {
+          progressBar.increment();
           logger.error(err);
           reject(new Error(`Error while generating ${page.pageConfig.sourcePath}`));
         }

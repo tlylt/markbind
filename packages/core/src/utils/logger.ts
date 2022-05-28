@@ -45,15 +45,17 @@ const warnWarp = (input: any) => {
 };
 
 // create a wrapper for info messages
-const infoWarp = (input: any) => {
-  if (progressBar) {
-    progressBar.interruptBegin();
-    winston.info(input);
-    progressBar.interruptEnd();
-  } else {
-    winston.info(input);
-  }
-};
+// const infoWarp = (input: any) => {
+//   if (progressBar) {
+//     progressBar.interruptBegin();
+//     winston.info(input);
+//     progressBar.interruptEnd();
+//   } else {
+//     winston.info(input);
+//   }
+// };
+
+const infoWarp = winston.info;
 
 const { debug } = winston;
 const { verbose } = winston;

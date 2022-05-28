@@ -98,6 +98,7 @@ function ProgressBar(fmt, options) {
   this.callback = options.callback || function () { };
   this.tokens = {};
   this.lastDraw = '';
+  this.count = this.curr; // Extra counter to keep track of all processed pages
 }
 
 /**
@@ -120,12 +121,13 @@ ProgressBar.prototype.tick = function (len, tokens) {
   if (0 == this.curr) this.start = new Date;
 
   this.curr += len
+  this.count += len
 
   // try to render
   this.render();
 
   // progress complete
-  if (this.curr >= this.total) {
+  if (this.count >= this.total) {
     this.render(undefined, true);
     this.complete = true;
     this.terminate();
@@ -133,6 +135,11 @@ ProgressBar.prototype.tick = function (len, tokens) {
     return;
   }
 };
+
+// Increment count if page failed to generate
+ProgressBar.prototype.increment = function () {
+  this.count += 1;
+}
 
 /**
  * Method to render the progress bar with optional `tokens` to place in the
