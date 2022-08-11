@@ -6,7 +6,7 @@ jest.mock('fs');
 
 // Assets
 const json = {
-  './userGuide/raw.html': '1',
+  './userGuide/raw.html': "1",
   './images/logo.png': '2',
   './css/main.css': '3',
   './devGuide/index.html': '4',
