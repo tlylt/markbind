@@ -5,3 +5,5 @@ NOCOLOR="\033[0m"
 
 echo -e "${BLUE}(pre-push) Linting files...${NOCOLOR}"
 npm run lint
+
+# test ignore
